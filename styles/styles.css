@@ -9,19 +9,33 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins , sans-serif;
+}
+body{
 
+}
 
 
 /*////////////////////////
-    1. Global Styles
+    1. Global Styles ------ grijs #899CA0 en donkergroen #1C2B32
 ////////////////////////*/
+
+button:hover{
+    cursor: pointer;
+}
 
 
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
-
+p , h2, h3, h4, h5, h6{
+    color: #1C2B32;
+}
 
 
 /*////////////////////////
@@ -33,17 +47,195 @@ Table of Contents:
 /*///////////// 3.1 Header /////////////*/
 
 
+header{
+    position: relative;
+    text-align: center;
+
+}
+#header-info {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+
+}
+
+h1{
+    font-size: 6rem;
+    color: #1C2B32;
+}
+header article p{
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+header article label button {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: #1C2B32;
+    padding: 25px 30px 25px 20px;
+    border-radius: 0px 50px 50px 0px;
+    border: 3px solid #1C2B32;
+}
+header article label input {
+    font-size: 1rem;
+    background: rgba(101, 137, 153, 0.5);
+    border: 3px solid #1C2B32;
+    padding: 25px 100px 25px 30px;
+    border-radius: 50px 0px 00px 50px;
+    margin-right: -5px;
+
+}
+input:hover{
+    cursor: pointer;
+}
+input:focus{
+    background-color: rgba(163, 177, 183, 0.7);
+
+    outline: none;
+}
+input{
+    color: #1C2B32;
+}
+input::placeholder { /* Edge 12 -18 */
+    color: #1C2B32;
+}
+
+
+header {
+    width: 100%;
+    height: 750px;
+    background-image: url("/assets/images/mountains.jpg"); /* Replace with your image path */
+    background-size: cover; /* Scales the image to cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    position: relative;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
+
+main{
+    width: 900px;
+    text-align: center;
+    margin: auto;
+}
+
+h2{
+    padding: 40px 0;
+    font-size: 2rem;
+}
+.quote{
+    padding: 20px 0;
+    box-shadow: 2px 4px 15px 0 hsla(0, 0%, 13%, 0.29);
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.quote-text{
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 30px 70px;
+    padding: 20px 40px;
+}
+i{
+    text-align: left;
+    margin-left: -35px;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+.q-icon{
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    border: 100px;
+}
+.avatar {
+    padding-left: 60px;
+    margin-bottom: 50px;
+    height: 50px;
+    margin: -20px 65px;
+
+}
+#quote2{
+    margin-top: 50px;
+}
+
 
 
 
 /*///////////// 3.3 Support /////////////*/
 
+#call-img{
+    width: 100%;
+    border-radius: 15px;
+}
 
+#small-p{
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 30px 0;
+}
+
+#contact-button{
+    text-align: left;
+    padding: 20px 30px;
+    background-color: #1C2B32;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+.div-left{
+    text-align: left;
+}
+a{
+    color: #899CA0;
+}
+a:visited{
+    color: #899CA0;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.h2-space{
+    margin-top: 40px;
+}
+
+details{
+
+    padding: 30px 0;
+}
+summary:hover{
+    cursor: pointer;
+}
+details[open]{
+    padding-bottom: 30px;
+}
+.text-open {
+    margin-top: 20px;
+    padding: 30px 40px;
+    background-color: #899CA0;
+    color: white;
+    border-radius: 15px;
+}
+
+details:last-child{
+    padding-bottom: 100px;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer{
+    text-align: center;
+    background-color: #1C2B32;
+}
+footer p{
+    font-size: 0.9rem;
+    color: white;
+    padding: 30px 0;
+}
